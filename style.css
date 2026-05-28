@@ -306,3 +306,24 @@ button{
     opacity:0;
   }
 }
+
+
+
+/* RING GLOW */
+
+.ring{
+  font-size:90px;
+  margin-top:25px;
+  animation:ringGlow 2s infinite alternate;
+}
+
+@keyframes ringGlow{
+  from{
+    transform:scale(1);
+    filter:drop-shadow(0 0 8px gold);
+  }
+  to{
+    transform:scale(1.15);
+    filter:drop-shadow(0 0 28px gold);
+  }
+}
